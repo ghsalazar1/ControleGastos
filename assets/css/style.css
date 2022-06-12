@@ -1,12 +1,5 @@
-.menuPerfilImg {
-    margin-left: auto;
-    margin-right: auto;
-    background: url('../img/pessoa300px.png'); 
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;    
-}
+.headerNav{ background-color: #ebebeb}
 
-#btnVoltar{
-    background-color: blue;
+.openNavBtn { 
+    border-style: none;
 }
