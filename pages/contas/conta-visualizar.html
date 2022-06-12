@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cadastro de Categoria</title>
+    <title>Visualizar Conta</title>
     <!--<link ref="/assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../../assets/css/style.css">
     <link rel="stylesheet" href="../../assets/css/menu.css">
+    <link rel="stylesheet" href="../../pages/receitas/receita-style.css">
   </head>
   <body>
     <!-- As a link -->
@@ -21,46 +22,80 @@
 
      <div class="container" style="margin-top:15px;">
       <div class="row">
-        <div class="col-12">
-          <label for="nome" class="form-label">Nome</label>
+        <div class="col-6">
+            <label for="instituicao" class="form-label">Nome</label>
+        </div>
+        <div class="col-6">
+            <label for="limite" class="form-label">Descrição</label>
         </div>
       </div>
       <div class="row" style="margin-bottom:5px;;">
-        <div class="col-12">
-          <input type="text" class="form-control" id="nome">
+        <div class="col-6">
+          <input type="text" class="form-control" id="instituicao">
         </div>
+        <div class="col-6">
+            <input type="text" class="form-control" id="limite">
+          </div>
       </div>
-
+      
       <div class="row">
-        <div class="col-12">
-          <label for="obs" class="form-label">Observação</label>
+        <div class="col-6">
+          <label for="tipo" class="form-label">Tipo</label>
+        </div>
+        <div class="col-6">
+          <label for="banco" class="form-label">Banco</label>
         </div>
       </div>
 
       <div class="row" style="margin-bottom:5px;;">
-        <div class="col-12">
-          <textarea type="text" rows="10" class="form-control" id="obs"></textarea>
+        <div class="col-6">
+            <input type="text" class="form-control" id="tipo">
+        </div>
+        <div class="col-6">
+            <input type="text" class="form-control" id="banco">
         </div>
       </div>
 
-      <div class="row" style="margin-top: 11px;">
+      <div class="row mt-4" style="margin-bottom:5px;;">
         <div class="col-6">
-            <a class="btn btn-primary" href="../dashboard/dashboard.html" style="width: 160px;height: 45px;background-color: #5c5c5c;font-size: large;font-weight: 600;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
-                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                  </svg>
-                Excluir
-            </a> 
+        </div>
+        <div class="col-3">
+            <a class="btn btn-primary" href="../dashboard/dashboard.html" style="width: 160px;height: 45px;background-color: #5c5c5c;font-size: large;font-weight: 600;">Filtrar</a>
+        </div>
+        <div class="col-3">
+            <a class="btn btn-primary" href="../dashboard/dashboard.html" style="width: 160px;height: 45px;background-color: #3dab3d;font-size: large;font-weight: 600;">Novo</a>
+        </div>
+      </div>
+
+      <div class="row mt-4" style="margin-bottom:5px;">
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+              The current link item
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+            <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+            <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+            <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">A disabled link item</a>
+          </div>
+      </div>
+
+      <div class="row mt-4" style="margin-top: 11px;">
+         <div class="col-6">
+          <a class="btn btn-primary" href="../dashboard/dashboard.html" style="width: 160px;height: 45px;background-color: #5c5c5c;font-size: large;font-weight: 600;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+              </svg>
+            Voltar
+        </a>
         </div>
         <div class="col-6">
-            <a class="btn btn-primary" href="../dashboard/dashboard.html" style="width: 160px;height: 45px;background-color: #3dab3d;font-size: large;font-weight: 600;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
-                  </svg>
-                Editar
-            </a>
+          <a class="btn btn-primary" href="../dashboard/dashboard.html" style="width: 160px;height: 45px;background-color: #3dab3d;font-size: large;font-weight: 600;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+              </svg>
+            Cadastrar
+        </a>
         </div>
       </div>
 
@@ -113,7 +148,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../despesas/despesas-cadastro.html">
+            <a class="nav-link" href="../despesas/despesa-cadastro.html">
               <svg class="svg-icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cash" viewBox="0 0 16 16">
                 <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
                 <path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z"/>
