@@ -29,6 +29,7 @@ $(document).ready(function() {
     });
 
     $(".success-register-swal").click(function(e){
+        var evt = e
         e.preventDefault();
         Swal.fire({
             title: 'Confirmado!',
@@ -36,6 +37,10 @@ $(document).ready(function() {
             icon: 'success',
             confirmButtonColor: '#3fa906',
             allowOutsideClick: false
+          }).then((result)=> {
+            if (result.isConfirmed) {
+              window.location = evt.target.attributes.href.value;
+            }
           });
     });
 
@@ -53,7 +58,5 @@ $(document).ready(function() {
             window.location = evt.target.attributes.href.value;
           }
         });
-
-        console.log("teste");
   });
 });
