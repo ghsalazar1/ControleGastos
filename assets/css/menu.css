@@ -8,6 +8,11 @@
 .img-circle {
     border-radius: 0;
 }
+.openNavBtn { 
+    border-style: none;
+}
+.headerNav{ background-color: #ebebeb}
+
 
 .ratio {
     background-position: center center;
