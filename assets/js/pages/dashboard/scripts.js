@@ -30,7 +30,7 @@ window.Apex = {
         position: 'right'
       },
       x: {
-        show: false
+        show: true
       }
     },
     title: {
@@ -68,7 +68,7 @@ window.Apex = {
         position: 'right'
       },
       x: {
-        show: false
+        show: true
       }
     },
     title: {
@@ -106,7 +106,7 @@ window.Apex = {
         position: 'right'
       },
       x: {
-        show: false
+        show: true
       }
     },
     colors: ['#f4516c'],
@@ -149,7 +149,7 @@ window.Apex = {
         position: 'right'
       },
       x: {
-        show: false
+        show: true
       }
     },
     colors: ['#00c5dc'],
@@ -199,16 +199,16 @@ window.Apex = {
     labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
     xaxis: {
       axisBorder: {
-        show: false
+        show: true
       },
       axisTicks: {
-        show: false
+        show: true
       },
       crosshairs: {
-        show: false
+        show: true
       },
       labels: {
-        show: false,
+        show: true,
         style: {
           fontSize: '14px'
         }
@@ -217,21 +217,21 @@ window.Apex = {
     grid: {
       xaxis: {
         lines: {
-          show: false
+          show: true
         },
       },
       yaxis: {
         lines: {
-          show: false
+          show: true
         },
       }
     },
     yaxis: {
       axisBorder: {
-        show: false
+        show: true
       },
       labels: {
-        show: false
+        show: true
       },
     },
     legend: {
@@ -282,6 +282,9 @@ window.Apex = {
         }
       }
     },
+    dataLabels: {
+      enabled: true
+    },
     series: [70, 65],
     labels: ['Receitas', 'Despesas'],
     theme: {
@@ -321,9 +324,12 @@ window.Apex = {
           size: '72%',
         },
         dataLabels: {
-          enabled: false
+          enabled: true
         }
       }
+    },
+    dataLabels: {
+      enabled: true
     },
     colors: ['#775DD0', '#00C8E1', '#FFB900'],
     title: {
@@ -414,14 +420,14 @@ window.Apex = {
       strokeOpacity: 0.25,
     },
     grid: {
-      show: false,
+      show: true,
       padding: {
         left: 0,
         right: 0
       }
     },
     yaxis: {
-      show: false
+      show: true
     },
     labels: ['01/15/2002', '01/16/2002', '01/17/2002', '01/18/2002', '01/19/2002', '01/20/2002', '01/21/2002', '01/22/2002', '01/23/2002'],
     xaxis: {
